@@ -2,6 +2,7 @@ import {defer} from '@shopify/remix-oxygen';
 import {Await, useLoaderData, Link} from '@remix-run/react';
 import {Suspense} from 'react';
 import {Image, Money} from '@shopify/hydrogen';
+/*import {Subscribetop} from './Subscribetop/subscribetop';
 
 /**
  * @type {MetaFunction}
@@ -79,17 +80,93 @@ function FeaturedCollection({collection}) {
   if (!collection) return null;
   const image = collection?.image;
   return (
-    <Link
+
+
+
+
+
+
+    
+
+
+
+    <div
       className="featured-collection"
       to={`/collections/${collection.handle}`}
     >
-      {image && (
-        <div className="featured-collection-image">
+
+
+      <section id="SHADOW_SECTION_BLOG" class="center_holder">
+        <div class="grid_0_subscribe">
+          <div class="pfbd_text">
+            <h1 id="_H3" class="text-stone-200 ...">This is</h1>
+            <h1 id="_H1_2" >Plastic Free_By Design...</h1>
+            <h3 id="_H3" >Welcome!</h3>
+          </div>
+
+          <div id="pfbd_logo" class="bg-stone-200 ...">
+            <Image data={image} sizes="100%" />
+
+          </div>
+
+          <div id="hero_vid_container" class="bg-stone-200 ...">
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <section id="SHADOW_SECTION_BLOG_2" class="center_holder">
+        <div class="bottle_holder">
+          <div class="bottle">
+
+          </div>
+
+        </div>
+      </section>
+
+      
+      {/*<Subscribetop/>*/}
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      {image && (     
+        <div className="featured-collection-image">  
+
+        <br/>
+        <br/>
+              
           <Image data={image} sizes="100vw" />
         </div>
       )}
+
+
+
+
       <h1>{collection.title}</h1>
-    </Link>
+
+      
+    </div>
+
+    
+
+
+
   );
 }
 

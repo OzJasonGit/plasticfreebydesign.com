@@ -12,6 +12,285 @@ img {
   border-radius: 4px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECTION_2////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*FONTS///////////////////////////////////////////////////////////////////////////////////////////*/
+#_H1 {
+  margin-bottom: 0px;
+  
+}
+
+
+#_H1_2 {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: rgb(231 229 228);
+  font-size: 7.5rem;
+  line-height: 1;
+  left: -5px;
+  top: -5px;
+}
+
+
+#_H2 {
+  margin-bottom: 0px;
+}
+
+
+#_H3 {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: rgb(231 229 228);
+  font-size: 2.25rem;
+}
+
+#_H4 {
+  margin-bottom: 0px;
+}
+
+
+#_H5 {
+  margin-bottom: -2.5px;
+}
+
+
+#TEXT_OUTLINE {
+  -webkit-text-stroke: 1.85px rgb(120, 120, 120);
+}
+
+/*FONTS///////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+.center_holder {
+  position: relative;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: aliceblue;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+
+
+#SHADOW_SECTION_BLOG {
+  position: relative;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(23, 23, 23);
+  z-index: 1;
+  top: 0px;
+  left: 0;
+  overflow-x: hidden;
+}
+
+
+
+#SHADOW_SECTION_BLOG_2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: transparent;
+  z-index: 1;
+  top: 0px;
+  margin-top: -400px;
+  left: 0;
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+.grid_0_subscribe {
+  position: relative;
+  width: 100%;
+ 
+  background-color: transparent;
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 60px;
+  grid-template-rows: auto auto 20px;
+  grid-template-columns: 20px 115px 1.5fr 20px 1fr 60px .5fr 420px 120px 20px;
+  grid-template-areas: ". . SUB SUB SUB . . PFBD PFBD  ."
+                       ". . SUB SUB SUB . VIDEO VIDEO VIDEO . "
+                       ". . . . . . . . . .";
+}
+
+
+
+
+.bottle_holder {
+  position: relative;
+  width: 100%;
+
+  background-color: transparent;
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-rows: auto auto 20px;
+  grid-template-columns: 20px 115px 350px 20px 1fr 60px .5fr 420px 120px 20px;
+  grid-template-areas: ". . BOTTLE . . . . . . ."
+                       ". . BOTTLE . . . . . . . "
+                       ". . BOTTLE . . . . . . .";
+}
+
+
+.bottle{
+  grid-area: BOTTLE;
+  width: 100%;
+  height: 750px;
+  background-color: rgb(231 229 228);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.pfbd_text { 
+  grid-area: SUB;
+}
+
+
+#pfbd_logo {
+  grid-area: PFBD;
+  width: 100%;
+  height: 200px;
+}
+
+
+#hero_vid_container {
+  grid-area: VIDEO;
+  width: 100%;
+  height: 600px;
+  background-color: rgb(231 229 228);
+    border-bottom-left-radius: 200px;
+
+
+      border-start-start-radius: 0.5rem;
+        /* 8px */
+        border-end-start-radius: 300px;
+        /* 8px */
+        border-end-end-radius: 0.5rem;
+
+        border-start-end-radius: 0.5rem;
+
+
+    
+      /* 8px */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 * --------------------------------------------------
 * components/Aside
@@ -155,7 +434,7 @@ button.reset:hover:not(:has(> *)) {
   padding: 0 1rem;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 100;
 }
 
 .header-menu-mobile-toggle {
@@ -328,12 +607,15 @@ button.reset:hover:not(:has(> *)) {
   display: block;
   margin-bottom: 2rem;
   position: relative;
+  
 }
 
 .featured-collection-image {
   aspect-ratio: 1 / 1;
   @media (min-width: 45em) {
     aspect-ratio: 16 / 9;
+    position: relative;
+    margin-top: -350px;
   }
 }
 
@@ -484,3 +766,24 @@ button.reset:hover:not(:has(> *)) {
 .account-logout {
   display: inline-block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
