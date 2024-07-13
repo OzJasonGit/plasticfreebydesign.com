@@ -1,0 +1,40 @@
+env:
+  DEBUG: true  # Optional environment variable for debugging
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Run the job on the ubuntu-latest runner
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy using ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.IP }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            #!/bin/bash
+            
+            # Change directory to project directory
+            cd /var/www/plasticfreebydesign.com
+
+            # Pull latest changes from git
+            git pull origin main
+            
+            npm install -f
+            
+            npm run build  # Assuming you have a build script defined in your package.json
+            
+            pm2 start pfbd # Restart PM2 process
+            
+            systemctl restart apache2  # Restart Apache server
+
+            # End of script
