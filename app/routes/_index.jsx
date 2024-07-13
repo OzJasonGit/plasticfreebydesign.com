@@ -100,7 +100,7 @@ function FeaturedCollection({collection}) {
         <div class="grid_0_subscribe">
           <div class="pfbd_text">
             <h1 id="_H3" class="text-stone-200 ...">This is</h1>
-            <h1 id="_H1_2" >Plastic Free_By Design...pipeline testing</h1>
+            <h1 id="_H1_2" >Plastic Free_By Design...</h1>
             <h3 id="_H3" >Welcome!</h3>
           </div>
 
