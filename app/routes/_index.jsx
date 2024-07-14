@@ -2,7 +2,9 @@ import {defer} from '@shopify/remix-oxygen';
 import {Await, useLoaderData, Link} from '@remix-run/react';
 import {Suspense} from 'react';
 import {Image, Money} from '@shopify/hydrogen';
+import {Video} from '@shopify/hydrogen-react';
 /*import {Subscribetop} from './Subscribetop/subscribetop';
+
 
 /**
  * @type {MetaFunction}
@@ -110,8 +112,15 @@ function FeaturedCollection({collection}) {
           </div>
 
           <div id="hero_vid_container" class="bg-stone-200 ...">
-
-          </div>
+          <video
+  autoPlay
+  // controls
+  muted 
+  loop
+  src="https://cdn.shopify.com/videos/c/o/v/58c7cd0d9beb43a28d5a87275cf4756c.mp4"
+  style={{ objectFit:"cover" }}
+></video>
+         </div>
 
         </div>
 
@@ -122,7 +131,14 @@ function FeaturedCollection({collection}) {
       <section id="SHADOW_SECTION_BLOG_2" class="center_holder">
         <div class="bottle_holder">
           <div class="bottle">
-
+          <video
+  autoPlay
+  // controls
+  muted 
+  loop
+  src="https://cdn.shopify.com/videos/c/o/v/58c7cd0d9beb43a28d5a87275cf4756c.mp4"
+  style={{ objectFit:"cover", width:"100%" , height:"100%" }}
+></video>
           </div>
 
         </div>
